@@ -1,0 +1,19 @@
+<html>
+    <head>
+    </head>
+    <body>
+        Index <a href="/generate/">Generate</a>
+
+        {% for book in books %}
+            <div>
+                {{ book.title }} by {{ book.author.first_name }} {{ book.author.last_name }}
+            </div>
+        {% endfor %}
+
+        <style>
+        div {
+            margin: 10px;
+        }
+
+    </body>
+</html>

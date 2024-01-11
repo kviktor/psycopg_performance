@@ -1,0 +1,7 @@
+generate
+
+<form action="/generate/" method="post">
+    {% csrf_token %}
+    <input type="number" name="quantity" value="10"/>
+    <input type="submit"/>
+</form>
